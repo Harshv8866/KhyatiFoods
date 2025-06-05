@@ -1,0 +1,38 @@
+.process-section {
+  background-color: #f9fdfb;
+}
+
+.section-heading {
+  font-size: 2rem;
+  color: #1a5d1a;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.process-card {
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  border-left: 4px solid #4caf50;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+  border-left: 4px solid #2e7d32;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.process-icon {
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+.fonts{
+  font-family: "Alegreya SC";
+  font-weight: 900;
+  font-style: normal;
+}

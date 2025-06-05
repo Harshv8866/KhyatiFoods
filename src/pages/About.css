@@ -59,3 +59,14 @@
   font-weight: 100;
   font-style: normal;
 }
+
+.about-image {
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+

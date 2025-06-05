@@ -22,7 +22,7 @@ const About = () => {
 
 
 
-    const values = [
+  const values = [
     {
       icon: "/imgs/leaf.png",
       title: "Pure Ingredients",
@@ -66,7 +66,7 @@ const About = () => {
             initial="hidden"
             animate={leftInView ? "visible" : "hidden"}
           >
-            <h3 className="fonts">Khyati Foods: The Trusted Name in Dehydrated Onion & Garlic Products</h3>
+            <h2 className="fonts text-start ">Khyati Foods: The Trusted Name in Dehydrated Onion & Garlic Products</h2>
             <br />
             <motion.img
               src="/imgs/aboutimg1.png"
@@ -75,11 +75,14 @@ const About = () => {
               variants={fadeUpVariant}
               initial="hidden"
               animate={leftInView ? "visible" : "hidden"}
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
             />
+
             <motion.p
               variants={fadeUpVariant}
               initial="hidden"
-              className="font2"
+              className="font2 text-start"
               animate={leftInView ? "visible" : "hidden"}
             >
               Khyati Foods is a leading manufacturer and exporter of high-quality dehydrated onion and garlic products, committed to delivering natural taste and nutritional value in every form. Based in India, we specialize in processing fresh produce into various dehydrated forms such as flakes, granules, slices, minced, and powders, ensuring convenience and extended shelf life without compromising on quality.
@@ -97,11 +100,11 @@ const About = () => {
               <motion.p className="font2" variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} >
                 With advanced dehydration technology and strict quality control processes, we produce ingredients that meet international food safety standards, making us a trusted partner in the food processing, hospitality, retail, and spice industries.
               </motion.p>
-              <motion.h3 variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="fonts">
+              <motion.h3 variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="fonts text-start">
                 🌱 What We Do:
               </motion.h3>
-              <motion.ul variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"}>
-                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Onion Products</b><br  /><span className="font2">Flakes, Chopped, Minced, Granules, Powder</span></li>
+              <motion.ul variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="text-start">
+                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Onion Products</b><br /><span className="font2">Flakes, Chopped, Minced, Granules, Powder</span></li>
                 <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Garlic Products</b><br /><span className="font2">Flakes, Minced, Granules, Powder</span></li>
                 <li><i className="bi bi-check-circle-fill fonts"></i> <b>Custom Drying & Processing Solutions</b><br /><span className="font2">Tailored dehydration based on customer specifications</span></li>
               </motion.ul>
@@ -110,69 +113,72 @@ const About = () => {
               </motion.p>
               <motion.img
                 src="/imgs/aboutimg2.png"
-                className="img-fluid rounded-4 mt-4"
-                alt="Dehydrated Products"
+                className="img-fluid rounded-4 mb-4"
+                alt="Garlic Kibbled"
                 variants={fadeUpVariant}
                 initial="hidden"
-                animate={rightInView ? "visible" : "hidden"}
+                animate={leftInView ? "visible" : "hidden"}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
               />
+
             </div>
           </motion.div>
         </div>
 
         {/* 🌿 New Section: Vision & Sustainability */}
-    <div className="row mt-5 gy-4 align-items-center p-4 rounded-4" ref={visionRef}>
-  <motion.div
-    className="col-lg-6"
-    variants={fadeUpVariant}
-    initial="hidden"
-    animate={visionInView ? "visible" : "hidden"}
-  >
-    <h3 className="mb-3 fonts">🌍 Our Vision & Commitment</h3>
-    <p className="font2 ">
-      At Khyati Foods, sustainability isn’t a choice — it's a responsibility. We embrace eco-conscious practices, minimize waste, and support ethical sourcing directly from local farms. Our facility is designed to reduce energy consumption while maximizing quality output.
-    </p>
-    <p className="font2 ">
-      We envision a healthier world where nutritious food ingredients are accessible and trusted. Every step we take, from sourcing to packaging, reflects our commitment to nature and people alike.
-    </p>
-  </motion.div>
+        <div className="row mt-5 gy-4 align-items-center p-4 rounded-4" ref={visionRef}>
+          <motion.div
+            className="col-lg-6"
+            variants={fadeUpVariant}
+            initial="hidden"
+            animate={visionInView ? "visible" : "hidden"}
+          >
+            <h3 className="mb-3 fonts text-start">🌍 Our Vision & Commitment</h3>
+            <p className="font2 text-start ">
+              At Khyati Foods, sustainability isn’t a choice — it's a responsibility. We embrace eco-conscious practices, minimize waste, and support ethical sourcing directly from local farms. Our facility is designed to reduce energy consumption while maximizing quality output.
+            </p>
+            <p className="font2 text-start ">
+              We envision a healthier world where nutritious food ingredients are accessible and trusted. Every step we take, from sourcing to packaging, reflects our commitment to nature and people alike.
+            </p>
+          </motion.div>
 
-  <motion.div
-    className="col-lg-6"
-    variants={fadeUpVariant}
-    initial="hidden"
-    animate={visionInView ? "visible" : "hidden"}
-  >
-    <img
-      src="/imgs/aboutimg3.webp"
-      alt="Sustainability"
-      className="img-fluid rounded-4 img-hover-zoom"
-      style={{ float: "right", width: "500px" }}
-    />
-  </motion.div>
-</div>
-
-      </div>
-
-
-
-          <section className="why-choose py-5">
-      <div className="container text-center">
-        <h2 className="section-title mb-1 fs-1 font3">Why Choose <span>Khyati Foods</span>?</h2>
-        <p className="section-subtitle mb-5 font2 fs-5">Elevating standards in dehydrated ingredients through integrity, innovation, and nature-first values.</p>
-        <div className="row g-4">
-          {values.map((item, idx) => (
-            <div className="col-md-4" key={idx}>
-              <div className="why-card h-100 p-4">
-                <img src={item.icon} alt="icon" className="why-icon mb-3" />
-                <h5 className="fw-bold">{item.title}</h5>
-                <p className="text-muted">{item.desc}</p>
-              </div>
-            </div>
-          ))}
+          <motion.div
+            className="col-lg-6"
+            variants={fadeUpVariant}
+            initial="hidden"
+            animate={visionInView ? "visible" : "hidden"}
+          >
+            <img
+              src="/imgs/aboutimg3.webp"
+              alt="Sustainability"
+              className="img-fluid rounded-4 img-hover-zoom"
+              style={{ float: "right", width: "500px" }}
+            />
+          </motion.div>
         </div>
+
       </div>
-    </section>
+
+
+
+      <section className="why-choose py-5">
+        <div className="container text-center">
+          <h2 className="section-title mb-1 fs-1 font3">Why Choose <span>Khyati Foods</span>?</h2>
+          <p className="section-subtitle mb-5 font2 fs-5">Elevating standards in dehydrated ingredients through integrity, innovation, and nature-first values.</p>
+          <div className="row g-4">
+            {values.map((item, idx) => (
+              <div className="col-md-4" key={idx}>
+                <div className="why-card h-100 p-4">
+                  <img src={item.icon} alt="icon" className="why-icon mb-3" />
+                  <h5 className="fw-bold">{item.title}</h5>
+                  <p className="text-muted">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 };
