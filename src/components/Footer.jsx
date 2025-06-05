@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -22,15 +23,15 @@ const Footer = () => {
           </p>
         </div>
 
-      <div className="footer-section footer-links">
+        <div className="footer-section footer-links">
           <h5>Quick Links</h5>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/process">Process</a></li>
-            <li><a href="/certificate">Certificate</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/About">About Us</Link></li>
+            <li><Link to="/products">Products</Link></li>
+            <li><Link to="/process">Process</Link></li>
+            <li><Link to="/certificate">Certificate</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -41,16 +42,36 @@ const Footer = () => {
           <p>Email: info@khyatifoods.com</p>
 
           <div className="footer-socials">
-            <a href="https://www.facebook.com/khyatifoods" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/khyatifoods"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
-            <a href="https://www.instagram.com/khyatifoods" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/khyatifoods"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://twitter.com/khyatifoods" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <a
+              href="https://twitter.com/khyatifoods"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://whatsapp.com/khyatifoods" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <a
+              href="https://whatsapp.com/khyatifoods"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Whatsapp"
+            >
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
           </div>

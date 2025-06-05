@@ -12,7 +12,6 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
     <Router>
       <NavigationBar />
       <Routes>
@@ -23,10 +22,9 @@ function App() {
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
       <WhatsAppButton />
-      <Footer/>
-    </>
+      <Footer />
+    </Router>
   );
 }
 
