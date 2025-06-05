@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/Logo.png'; // ✅ import logo
+import logo from '../assets/Logo.png';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavClick = () => {
+    setExpanded(false); // Close the navbar when a link is clicked
+  };
+
   return (
-    <Navbar expand="lg" className="custom-navbar shadow-sm" sticky="top">
+    <Navbar
+      expand="lg"
+      className="custom-navbar shadow-sm"
+      sticky="top"
+      expanded={expanded}
+      onToggle={setExpanded}
+    >
       <Container>
-        <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center">
+        <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center" onClick={handleNavClick}>
           <img
             src={logo}
             alt="KhyatiFoods Logo"
@@ -18,14 +30,15 @@ const NavigationBar = () => {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="main-navbar-nav" />
+
         <Navbar.Collapse id="main-navbar-nav">
           <Nav className="ms-auto nav-links">
-            <Nav.Link as={NavLink} to="/" end>Home</Nav.Link>
-            <Nav.Link as={NavLink} to="/about">About Us</Nav.Link>
-            <Nav.Link as={NavLink} to="/products">Product</Nav.Link>
-            <Nav.Link as={NavLink} to="/process">Process</Nav.Link>
-            <Nav.Link as={NavLink} to="/certificate">Certificate</Nav.Link>
-            <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+            <Nav.Link as={NavLink} to="/" end onClick={handleNavClick}>Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/about" onClick={handleNavClick}>About Us</Nav.Link>
+            <Nav.Link as={NavLink} to="/products" onClick={handleNavClick}>Product</Nav.Link>
+            <Nav.Link as={NavLink} to="/process" onClick={handleNavClick}>Process</Nav.Link>
+            <Nav.Link as={NavLink} to="/certificate" onClick={handleNavClick}>Certificate</Nav.Link>
+            <Nav.Link as={NavLink} to="/contact" onClick={handleNavClick}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
