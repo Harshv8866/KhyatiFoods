@@ -138,3 +138,14 @@ body {
     padding: 8px 16px;
   }
 }
+
+
+.fonts{
+  font-family: "Alegreya SC", serif;
+}
+
+.fonts2{
+  font-family: "Corben", serif;
+  font-weight: 100;
+  font-style: normal;
+}

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./carousel-arrows.css";
+import "./Home.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import About from "./About";
+import Products from "./Products";
 
 const Home = () => {
   const [animate, setAnimate] = useState(false);
@@ -19,19 +20,19 @@ const Home = () => {
 
   const slides = [
     {
-      title: "Fresh Mangoes",
+      title: "Dehydrated White Onion Flakes",
       description: "Experience the taste of naturally ripened mangoes from our farms.",
       img: "/imgs/slide1.png",
       button: "Shop Now",
     },
     {
-      title: "Premium Spices",
+      title: "Dehydrated  Garlic Chopped",
       description: "High-quality spices to add flavor and aroma to your dishes.",
       img: "/imgs/slide2.png",
       button: "Explore Spices",
     },
     {
-      title: "Dehydrated Vegetables",
+      title: "Dehydrated Red Onion Flakes",
       description: "Healthy, preserved veggies — perfect for year-round use.",
       img: "/imgs/slide3.png",
       button: "Browse Products",
@@ -78,7 +79,7 @@ const Home = () => {
               }}
             />
         <Carousel.Caption className="carousel-caption-custom">
-  <h2 className="carousel-title">{slide.title}</h2>
+  <h2 className="carousel-title fonts">{slide.title}</h2>
   <p className="carousel-description">{slide.description}</p>
   <button className="carousel-button">{slide.button}</button>
 </Carousel.Caption>
@@ -95,10 +96,10 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-xl-6 text-dark">
-              <h1 className="border-bottom" style={{ color: "#4cb04f" }}>
+              <h1 className="border-bottom fonts" style={{ color: "#4cb04f" }}>
                 WELCOME TO KHYATI FOODS
               </h1>
-              <p className="fonts-style fw-light">
+              <p className=" fonts2 ">
                 KHYATI FOODS – Premium Dehydrated Fruits, Vegetables & Spices At Khyati Foods,
                 we pride ourselves on delivering superior quality dehydrated fruits,
                 vegetables, and spices that preserve nature’s goodness and flavor. Built
@@ -169,6 +170,17 @@ const Home = () => {
           </div>
         </div>
         <About />
+      </section>
+
+
+      <section>
+        <div className="container">
+          <div className="container section-title" data-aos="fade-up">
+            <h2>About</h2>
+            <p style={{ color: "#4caf50" }}> About Us</p>
+          </div>
+        </div>
+        <Products/>
       </section>
     </div>
   );
