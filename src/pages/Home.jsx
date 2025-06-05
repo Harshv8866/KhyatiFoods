@@ -123,36 +123,45 @@ const Home = () => {
 
             <div className="col-12 col-xl-6 mt-xl-5 mt-1">
               <div className="ms-xl-5 ms-1">
-                <Swiper
-                  direction={"vertical"}
-                  slidesPerView={1}
-                  spaceBetween={80}
-                  mousewheel={true}
-                  pagination={{ clickable: true }}
-                  modules={[Mousewheel, Pagination]}
-                  className="mySwiper"
-                  style={{ height: "400px", borderRadius: "15px" }}
-                >
-                  {images.map((img, i) => (
-                    <SwiperSlide
-                      key={i}
-                      style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
-                    >
-                      <img
-                        src={img}
-                        alt={`Slide ${i + 1}`}
-                        style={{
-                          width: "500px",
-                          height: "400px",
-                          objectFit: "cover",
-                          borderRadius: "10px",
-                          display: "block",
-                          margin: "0 auto",
-                        }}
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+               <Swiper
+  direction={"vertical"}
+  slidesPerView={1}
+  spaceBetween={80}
+  mousewheel={true}
+  pagination={{ clickable: true }}
+  modules={[Mousewheel, Pagination]}
+  className="mySwiper"
+  style={{
+    height: "400px",
+    borderRadius: "15px",
+    maxWidth: "100%",
+  }}
+>
+  {images.map((img, i) => (
+    <SwiperSlide
+      key={i}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <img
+        src={img}
+        alt={`Slide ${i + 1}`}
+        style={{
+          width: "100%",
+          maxWidth: "500px",  // limits on large screens
+          height: "auto",
+          aspectRatio: "5 / 4", // keeps proportions
+          objectFit: "cover",
+          borderRadius: "10px",
+        }}
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
               </div>
             </div>
           </div>

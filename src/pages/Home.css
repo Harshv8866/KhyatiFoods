@@ -32,6 +32,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -125,11 +126,26 @@ body {
 }
 
 /* 🔽 Mobile styles */
+
+
+.fonts {
+  font-family: "Alegreya SC", serif;
+}
+
+.fonts2 {
+  font-family: "Corben", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+
 @media (max-width: 576px) {
   .carousel-title {
     font-size: 1.5rem;
   }
-
+  
   .carousel-description {
     font-size: 1rem;
   }
@@ -138,15 +154,11 @@ body {
     font-size: 0.9rem;
     padding: 8px 16px;
   }
+
 }
 
-
-.fonts{
-  font-family: "Alegreya SC", serif;
-}
-
-.fonts2{
-  font-family: "Corben", serif;
-  font-weight: 100;
-  font-style: normal;
+@media (max-width: 768px) {
+  .mySwiper {
+    height: 300px !important;
+  }
 }
