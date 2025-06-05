@@ -77,32 +77,12 @@ const Home = () => {
                 zIndex: 1,
               }}
             />
-            <Carousel.Caption
-              style={{
-                zIndex: 2,
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                position: "absolute",
-                textAlign: "center",
-              }}
-            >
-              <h2 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>{slide.title}</h2>
-              <p style={{ fontSize: "1.2rem" }}>{slide.description}</p>
-              <button
-                style={{
-                  backgroundColor: "#4caf50",
-                  border: "none",
-                  padding: "10px 20px",
-                  borderRadius: "6px",
-                  color: "white",
-                  fontSize: "1rem",
-                  marginTop: "10px",
-                }}
-              >
-                {slide.button}
-              </button>
-            </Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-custom">
+  <h2 className="carousel-title">{slide.title}</h2>
+  <p className="carousel-description">{slide.description}</p>
+  <button className="carousel-button">{slide.button}</button>
+</Carousel.Caption>
+
           </Carousel.Item>
         ))}
       </Carousel>

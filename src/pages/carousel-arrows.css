@@ -92,3 +92,49 @@ body {
   text-transform: uppercase;
   font-family: var(--heading-font);
 }
+
+
+
+.carousel-caption-custom {
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+
+.carousel-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.carousel-description {
+  font-size: 1.2rem;
+}
+
+.carousel-button {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* 🔽 Mobile styles */
+@media (max-width: 576px) {
+  .carousel-title {
+    font-size: 1.5rem;
+  }
+
+  .carousel-description {
+    font-size: 1rem;
+  }
+
+  .carousel-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
