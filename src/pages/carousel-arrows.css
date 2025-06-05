@@ -1,0 +1,94 @@
+/* carousel-arrows.css */
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: center;
+
+  border-radius: 6px;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.carousel-control-prev {
+  left: auto;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+/* carousel-animations.css */
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-caption h2,
+.carousel-caption p,
+.carousel-caption button {
+  opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+.carousel-caption h2 {
+  animation-delay: 0.3s;
+}
+
+.carousel-caption p {
+  animation-delay: 0.6s;
+}
+
+.carousel-caption button {
+  animation-delay: 0.9s;
+}
+
+
+.section-title {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  position: relative;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: var(--accent-color);
+  margin: 4px 10px;
+}
+
+.section-title p {
+  color: var(--heading-color);
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}

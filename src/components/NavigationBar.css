@@ -1,0 +1,46 @@
+/* Entire navbar background and font */
+.custom-navbar {
+  background-color: #e8f5e9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Brand logo or text */
+.navbar-brand-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2e7d32 !important;
+}
+
+/* Nav link styles */
+.nav-links .nav-link {
+  margin-left: 50px;
+  color: #2e7d32 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+/* Hover underline */
+.nav-links .nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #2e7d32;
+  width: 0%;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+/* Apply only on hover for larger screens */
+@media (min-width: 768px) {
+  .nav-links .nav-link:hover::after,
+  .nav-links .nav-link.active::after {
+    width: 100%;
+  }
+}
+
+/* Highlight active links */
+.nav-links .nav-link.active {
+  font-weight: 600;
+}
