@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaIndustry, FaFlask, FaLeaf, FaBox, FaTruck, FaSmile } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import './Process.css';
 
 const steps = [
@@ -35,6 +36,23 @@ const steps = [
   },
 ];
 
+// Animation variants for the cards container
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, // animate children one after another
+    },
+  },
+};
+
+// Animation variants for each card
+const cardVariants = {
+  hidden: { opacity: 0, y: -30 }, // fade in from above
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
 const Process = () => {
   return (
     <section className="process-section py-5">
@@ -43,17 +61,29 @@ const Process = () => {
         <p className="text-center section-subtitle mb-5 font2">
           From farm to final product — discover how we ensure unmatched quality at every step.
         </p>
-        <div className="row g-4">
+
+        {/* Motion container for all cards */}
+        <motion.div 
+          className="row g-4"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {steps.map((step, index) => (
-            <div key={index} className="col-md-6 col-lg-4">
+            // Motion card with animation variants
+            <motion.div 
+              key={index} 
+              className="col-md-6 col-lg-4"
+              variants={cardVariants}
+            >
               <div className="process-card p-4 h-100 shadow-sm rounded-4">
                 {step.icon}
                 <h5 className="mt-3 fw-bold">{step.title}</h5>
                 <p className="text-muted small">{step.desc}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
