@@ -1,6 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import "./Products.css";
 
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 const Product = [
   {
@@ -8,63 +17,63 @@ const Product = [
     name: "Dehydrated Garlic Flakes",
     image: "/imgs/product1.png",
     desc: "Crisp, white garlic flakes perfect for seasoning and industrial use.",
-    pack: "Available in 5kg | 10kg | 20kg packs"
+    pack: "Available in 5kg | 10kg | 20kg packs",
   },
   {
     id: 2,
     name: "Dehydrated Onion Powder",
     image: "/imgs/product2.png",
     desc: "Fine, aromatic powder for flavoring soups, sauces, and snacks.",
-    pack: "Available in 1kg | 5kg | 25kg drums"
+    pack: "Available in 1kg | 5kg | 25kg drums",
   },
   {
     id: 3,
     name: "Dehydrated Garlic Granules",
     image: "/imgs/product3.png",
     desc: "Uniform garlic granules ideal for ready-to-eat mixes and spices.",
-    pack: "Available in 2kg | 10kg | 25kg bags"
+    pack: "Available in 2kg | 10kg | 25kg bags",
   },
   {
     id: 4,
     name: "Dehydrated White Onion Minced",
     image: "/imgs/product4.png",
     desc: "Premium minced white onion for high-grade food applications.",
-    pack: "Available in 10kg | 20kg packaging"
+    pack: "Available in 10kg | 20kg packaging",
   },
   {
-    id: 4,
-    name: "Dehydrated White Onion Minced",
+    id: 5,
+    name: "Dehydrated Red Onion Flakes",
     image: "/imgs/product5.png",
-    desc: "Premium minced white onion for high-grade food applications.",
-    pack: "Available in 10kg | 20kg packaging"
+    desc: "Vibrant red onion flakes with bold flavor and rich color.",
+    pack: "Available in 10kg | 20kg packaging",
   },
   {
-    id: 4,
-    name: "Dehydrated White Onion Minced",
+    id: 6,
+    name: "Dehydrated Garlic Powder",
     image: "/imgs/product6.png",
-    desc: "Premium minced white onion for high-grade food applications.",
-    pack: "Available in 10kg | 20kg packaging"
+    desc: "Smooth garlic powder for sauces, dressings, and instant foods.",
+    pack: "Available in 1kg | 5kg | 25kg packaging",
   },
   {
-    id: 4,
-    name: "Dehydrated White Onion Minced",
+    id: 7,
+    name: "Dehydrated White Onion Granules",
     image: "/imgs/product7.png",
-    desc: "Premium minced white onion for high-grade food applications.",
-    pack: "Available in 10kg | 20kg packaging"
+    desc: "Ideal for spice blends and flavoring solutions in bulk production.",
+    pack: "Available in 10kg | 20kg packaging",
   },
   {
-    id: 4,
-    name: "Dehydrated White Onion Minced",
+    id: 8,
+    name: "Dehydrated Onion Chopped",
     image: "/imgs/product8.png",
-    desc: "Premium minced white onion for high-grade food applications.",
-    pack: "Available in 10kg | 20kg packaging"
+    desc: "Fresh chopped onions dehydrated for consistency and convenience.",
+    pack: "Available in 10kg | 20kg packaging",
   },
 ];
 
 const Products = () => {
-
-
-const [selectedImage, setSelectedImage] = useState(null); // ✅ correct!
+  const [selectedImage, setSelectedImage] = useState(null);
+  const sectionRef = useRef(null);
+  const sectionInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   const handleImageClick = (img) => {
     setSelectedImage(img);
@@ -73,8 +82,15 @@ const [selectedImage, setSelectedImage] = useState(null); // ✅ correct!
   const closeModal = () => {
     setSelectedImage(null);
   };
+
   return (
-      <section className="product-section py-5">
+    <motion.section
+      className="product-section py-5"
+      ref={sectionRef}
+      variants={fadeUpVariant}
+      initial="hidden"
+      animate={sectionInView ? "visible" : "hidden"}
+    >
       <div className="container">
         <h2 className="section-title text-center mb-4">Our Products</h2>
         <p className="section-subtitle text-center mb-5">
@@ -83,20 +99,28 @@ const [selectedImage, setSelectedImage] = useState(null); // ✅ correct!
 
         <div className="row g-4">
           {Product.map((product) => (
-            <div className="col-md-6 col-lg-4" key={product.id}>
-              <div className="product-card h-100 p-3 rounded-4">
-                <img
-                  src={product.image}
-                  className="img-fluid rounded-3 mb-3 ms-xl-5 ms-1 product-img"
-                  style={{ height: "300px", cursor: "pointer" }}
-                  alt={product.name}
-                  onClick={() => handleImageClick(product.image)}
-                />
-                <h5 className="fw-bold">{product.name}</h5>
-                <p>{product.desc}</p>
-                <p className="text-muted small">{product.pack}</p>
-              </div>
-            </div>
+            <motion.div
+              className="col-md-6 col-lg-4"
+              key={product.id}
+              variants={fadeUpVariant}
+              initial="hidden"
+              animate={sectionInView ? "visible" : "hidden"}
+              transition={{ delay: 0.1 * product.id }}
+            >
+             <div className="product-card h-100 p-3 rounded-4 shadow-sm text-center">
+  <img
+    src={product.image}
+    className="img-fluid rounded-4 mb-4 product-img"
+    style={{ height: "260px", objectFit: "cover", cursor: "pointer" }}
+    alt={product.name}
+    onClick={() => handleImageClick(product.image)}
+  />
+  <h5 className="fw-semibold text-dark mb-2">{product.name}</h5>
+  <p className="text-secondary small mb-2">{product.desc}</p>
+  <p className="text-success small fw-medium">{product.pack}</p>
+</div>
+
+            </motion.div>
           ))}
         </div>
       </div>
@@ -107,7 +131,7 @@ const [selectedImage, setSelectedImage] = useState(null); // ✅ correct!
           <img src={selectedImage} alt="Enlarged" />
         </div>
       )}
-    </section>
+    </motion.section>
   );
 };
 

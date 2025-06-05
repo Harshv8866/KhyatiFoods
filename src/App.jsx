@@ -7,9 +7,12 @@ import Products from './pages/Products';
 import Process from './pages/Process';
 import Certificate from './pages/Certificate';
 import Contact from './pages/Contact';
+import WhatsAppButton from './components/WhatsAppButton';
+import Footer from './components/Footer';
 
 function App() {
   return (
+    <>
     <Router>
       <NavigationBar />
       <Routes>
@@ -21,6 +24,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
+      <WhatsAppButton />
+      <Footer/>
+    </>
   );
 }
 
