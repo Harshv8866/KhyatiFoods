@@ -87,7 +87,7 @@ const [selectedImage, setSelectedImage] = useState(null); // ✅ correct!
               <div className="product-card h-100 p-3 rounded-4">
                 <img
                   src={product.image}
-                  className="img-fluid rounded-3 mb-3 ms-5 product-img"
+                  className="img-fluid rounded-3 mb-3 ms-xl-5 ms-1 product-img"
                   style={{ height: "300px", cursor: "pointer" }}
                   alt={product.name}
                   onClick={() => handleImageClick(product.image)}
