@@ -14,12 +14,12 @@
 /* Nav link styles */
 .nav-links .nav-link {
   margin-left: 50px;
-  font-size: 1.1rem;
   color: #2e7d32 !important;
   font-weight: 500;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-block !important;
    font-family: "Noticia Text", serif;
 }
 
@@ -39,7 +39,9 @@
   .nav-links .nav-link:hover::after,
   .nav-links .nav-link.active::after {
     width: 100%;
+    text-align: start !important;
   }
+  
 }
 
 /* Highlight active links */
