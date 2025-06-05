@@ -66,7 +66,7 @@ const About = () => {
             initial="hidden"
             animate={leftInView ? "visible" : "hidden"}
           >
-            <h3>Khyati Foods: The Trusted Name in Dehydrated Onion & Garlic Products</h3>
+            <h3 className="fonts">Khyati Foods: The Trusted Name in Dehydrated Onion & Garlic Products</h3>
             <br />
             <motion.img
               src="/imgs/aboutimg1.png"
@@ -79,6 +79,7 @@ const About = () => {
             <motion.p
               variants={fadeUpVariant}
               initial="hidden"
+              className="font2"
               animate={leftInView ? "visible" : "hidden"}
             >
               Khyati Foods is a leading manufacturer and exporter of high-quality dehydrated onion and garlic products, committed to delivering natural taste and nutritional value in every form. Based in India, we specialize in processing fresh produce into various dehydrated forms such as flakes, granules, slices, minced, and powders, ensuring convenience and extended shelf life without compromising on quality.
@@ -93,18 +94,18 @@ const About = () => {
             animate={rightInView ? "visible" : "hidden"}
           >
             <div className="content ps-0 ps-lg-5">
-              <motion.p className="fst-italic" variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"}>
+              <motion.p className="font2" variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} >
                 With advanced dehydration technology and strict quality control processes, we produce ingredients that meet international food safety standards, making us a trusted partner in the food processing, hospitality, retail, and spice industries.
               </motion.p>
-              <motion.h3 variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"}>
+              <motion.h3 variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="fonts">
                 🌱 What We Do:
               </motion.h3>
               <motion.ul variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"}>
-                <li><i className="bi bi-check-circle-fill"></i> <b>Dehydrated Onion Products</b><br />Flakes, Chopped, Minced, Granules, Powder</li>
-                <li><i className="bi bi-check-circle-fill"></i> <b>Dehydrated Garlic Products</b><br />Flakes, Minced, Granules, Powder</li>
-                <li><i className="bi bi-check-circle-fill"></i> <b>Custom Drying & Processing Solutions</b><br />Tailored dehydration based on customer specifications</li>
+                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Onion Products</b><br  /><span className="font2">Flakes, Chopped, Minced, Granules, Powder</span></li>
+                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Garlic Products</b><br /><span className="font2">Flakes, Minced, Granules, Powder</span></li>
+                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Custom Drying & Processing Solutions</b><br /><span className="font2">Tailored dehydration based on customer specifications</span></li>
               </motion.ul>
-              <motion.p variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"}>
+              <motion.p variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="font2">
                 At Khyati Foods, we blend technology with tradition — ensuring every product retains its authentic flavor, aroma, and nutritional value.
               </motion.p>
               <motion.img
@@ -127,11 +128,11 @@ const About = () => {
     initial="hidden"
     animate={visionInView ? "visible" : "hidden"}
   >
-    <h3 className="mb-3">🌍 Our Vision & Commitment</h3>
-    <p>
+    <h3 className="mb-3 fonts">🌍 Our Vision & Commitment</h3>
+    <p className="font2 ">
       At Khyati Foods, sustainability isn’t a choice — it's a responsibility. We embrace eco-conscious practices, minimize waste, and support ethical sourcing directly from local farms. Our facility is designed to reduce energy consumption while maximizing quality output.
     </p>
-    <p>
+    <p className="font2 ">
       We envision a healthier world where nutritious food ingredients are accessible and trusted. Every step we take, from sourcing to packaging, reflects our commitment to nature and people alike.
     </p>
   </motion.div>
@@ -157,8 +158,8 @@ const About = () => {
 
           <section className="why-choose py-5">
       <div className="container text-center">
-        <h2 className="section-title mb-1">Why Choose <span>Khyati Foods</span>?</h2>
-        <p className="section-subtitle mb-5">Elevating standards in dehydrated ingredients through integrity, innovation, and nature-first values.</p>
+        <h2 className="section-title mb-1 fs-1 font3">Why Choose <span>Khyati Foods</span>?</h2>
+        <p className="section-subtitle mb-5 font2 fs-5">Elevating standards in dehydrated ingredients through integrity, innovation, and nature-first values.</p>
         <div className="row g-4">
           {values.map((item, idx) => (
             <div className="col-md-4" key={idx}>

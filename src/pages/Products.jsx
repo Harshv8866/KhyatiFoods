@@ -92,8 +92,8 @@ const Products = () => {
       animate={sectionInView ? "visible" : "hidden"}
     >
       <div className="container">
-        <h2 className="section-title text-center mb-4">Our Products</h2>
-        <p className="section-subtitle text-center mb-5">
+        <h2 className="section-title text-center mb-2 fonts">OUR PRODUCTS</h2>
+        <p className="section-subtitle text-center mb-5 font2">
           Discover our premium range of dehydrated garlic and onion products, crafted for purity, flavor, and shelf stability.
         </p>
 

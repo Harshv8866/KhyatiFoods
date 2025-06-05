@@ -46,3 +46,17 @@
   width: 60px;
   height: 60px;
 }
+
+
+.fonts{
+    font-family: "DM Serif Display", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #222
+}
+
+.font2{
+ font-family: "Corben", serif;
+  font-weight: 100;
+  font-style: normal;
+}

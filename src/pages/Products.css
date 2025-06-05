@@ -55,3 +55,16 @@
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
+
+
+.fonts{
+  font-family: "Alegreya SC";
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font2{
+ font-family: "Corben", serif;
+  font-weight: 100;
+  font-style: normal;
+}
