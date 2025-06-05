@@ -8,7 +8,7 @@ const certificates = [
   { name: "APEDA", img: "/imgs/apeda.png" },
   { name: "Spice Board", img: "/imgs/spice-board.png" },
   { name: "SGS", img: "/imgs/SGS.png" },
-  { name: "FSSC", img: "/imgs/FSSC.png" },
+  { name: "FSSC", img: "/imgs/FSSC.webp" },
   { name: "KLBD", img: "/imgs/KLBD.png" },
 ];
 
