@@ -9,10 +9,12 @@ import Certificate from './pages/Certificate';
 import Contact from './pages/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />

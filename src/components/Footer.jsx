@@ -37,8 +37,8 @@ const Footer = () => {
 
         <div className="footer-section footer-contact">
           <h5>Contact Us</h5>
-          <p>123 Food Street, Green City, India</p>
-          <p>Phone: +91 98765 43210</p>
+          <p>Survey No, 186 , Dwarkadhish Rd, Bhanvad, Mahuva, Gujarat 364290</p>
+          <p>Phone: +91 9723890961</p>
           <p>Email: info@khyatifoods.com</p>
 
           <div className="footer-socials">

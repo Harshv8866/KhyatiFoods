@@ -5,7 +5,7 @@ import "./WhatsAppButton.css";
 const WhatsAppButton = () => {
   return (
     <motion.a
-      href="https://wa.me/8866483132?text=Hello%20Khyati%20Foods%2C%20I'm%20interested%20in%20your%20products"
+      href="https://wa.me/9723890961?text=Hello%20Khyati%20Foods%2C%20I'm%20interested%20in%20your%20products"
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
