@@ -1,0 +1,4 @@
+/* Prevent horizontal overflow for the entire page */
+body, html {
+  overflow-x: hidden;
+}

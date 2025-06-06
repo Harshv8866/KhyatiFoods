@@ -3,6 +3,11 @@
   transform: translateY(20px);
   animation: fadeUpAnim 3 ease forwards;
 }
+/* Prevent horizontal overflow for the entire page */
+body, html {
+  overflow-x: hidden;
+}
+
 
 @keyframes fadeUpAnim {
   to {
