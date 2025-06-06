@@ -80,6 +80,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         &copy; {new Date().getFullYear()} KhyatiFoods. All rights reserved.
+         <small>Design by Dcretor</small>
       </div>
     </footer>
   );
