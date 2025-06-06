@@ -47,17 +47,15 @@ const Contact = () => {
           <div className="contact-info-box">
             <h3>Contact Information</h3>
             <p>
-              <strong>Address:</strong> 123 Khyati Foods Street, Gujarat, India
+              <strong>Address:</strong> Survey No, 186 , Dwarkadhish Rd, Bhanvad, Mahuva, Gujarat 364290
             </p>
             <p>
-              <strong>Phone:</strong> +91 98765 43210
+              <strong>Phone:</strong> +91 9723890961
             </p>
             <p>
-              <strong>Email:</strong> contact@khyatifoods.com
+              <strong>Email:</strong> info@khyatifoods.com
             </p>
-            <p>
-              <strong>Working Hours:</strong> Mon - Sat, 9:00 AM - 6:00 PM
-            </p>
+           
           </div>
         </div>
       </div>
