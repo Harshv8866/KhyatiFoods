@@ -47,3 +47,14 @@ width: 400px;
   font-weight: 900;
   font-style: normal;
 }
+
+@media only screen and (max-width: 600px) {
+ 
+  .process-card {
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+width: 350px;
+  background-color: #e9f5ea;
+  padding: 2rem;
+  color: #333;
+}
+}
