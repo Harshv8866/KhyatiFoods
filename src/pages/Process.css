@@ -15,15 +15,26 @@
 }
 
 .process-card {
-  background-color: white;
-  transition: all 0.3s ease-in-out;
-  border-left: 4px solid #4caf50;
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+width: 400px;
+  background-color: #e9f5ea;
+  padding: 2rem;
+  color: #333;
 }
 
+.process-card p {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 70%; /* or try 65% or 75%, experiment */
+    margin-left: 15%;
+
+}
+
+
+
 .process-card:hover {
-  transform: translateY(-5px);
-  border-left: 4px solid #2e7d32;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border: 3px solid #2e7d32;
 }
 
 .process-icon {

@@ -80,7 +80,9 @@ const Footer = () => {
 
       <div className="footer-bottom">
         &copy; {new Date().getFullYear()} KhyatiFoods. All rights reserved.
-         <small>Design by Dcretor</small>
+<small>
+  Design by <a href="https://Dcreator.co.in" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none" ,color: "inherit" }}>dcretor</a>
+</small>
       </div>
     </footer>
   );

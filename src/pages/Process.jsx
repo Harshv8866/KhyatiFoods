@@ -79,7 +79,7 @@ const Process = () => {
               <div className="process-card p-4 h-100 shadow-sm rounded-4">
                 {step.icon}
                 <h5 className="mt-3 fw-bold">{step.title}</h5>
-                <p className="text-muted small">{step.desc}</p>
+                <p className="text-med small">{step.desc}</p>
               </div>
             </motion.div>
           ))}
