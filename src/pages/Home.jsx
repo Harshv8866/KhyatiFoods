@@ -184,12 +184,12 @@ const Home = () => {
       <br />
       <br />
 
-      <section>
+      <section >
         <div className="container section-title text-start" data-aos="fade-up">
           <h2>About</h2>
           <p style={{ color: "#4caf50" }}> About Us</p>
         </div>
-        <About />
+        <About  />
       </section>
 
       <section>

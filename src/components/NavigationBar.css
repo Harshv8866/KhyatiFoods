@@ -1,6 +1,6 @@
 /* Entire navbar background and font */
 .custom-navbar {
-  background-color: #e8f5e9;
+  background-color: #7fb35f;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -8,13 +8,13 @@
 .navbar-brand-text {
   font-weight: bold;
   font-size: 1.5rem;
-  color: #2e7d32 !important;
+  color: #ffffff !important;
 }
 
 /* Nav link styles */
 .nav-links .nav-link {
   margin-left: 50px;
-  color: #2e7d32 !important;
+  color: #053318 !important;
   font-weight: 500;
   font-size: 1.1rem;
   transition: all 0.3s ease;
@@ -28,7 +28,7 @@
   content: '';
   display: block;
   height: 2px;
-  background: #2e7d32;
+  background: #053318;
   width: 0%;
   transition: width 0.3s;
   margin-top: 4px;

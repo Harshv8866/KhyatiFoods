@@ -57,7 +57,8 @@ const About = () => {
   return (
     <>
       <br />
-      <div className="container">
+
+      <div className="container mt-xl-4 mt-0">
         <div className="row gy-4">
           <motion.div
             className="col-lg-6"
@@ -78,15 +79,16 @@ const About = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             />
+            <motion.h3 variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="fonts text-start">
+                🌱 What We Do:
+              </motion.h3>
+              <motion.ul variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="text-start">
+                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Onion Products</b><br /><span className="font2">Flakes, Chopped, Minced, Granules, Powder</span></li>
+                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Garlic Products</b><br /><span className="font2">Flakes, Minced, Granules, Powder</span></li>
+                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Custom Drying & Processing Solutions</b><br /><span className="font2">Tailored dehydration based on customer specifications</span></li>
+              </motion.ul>
 
-            <motion.p
-              variants={fadeUpVariant}
-              initial="hidden"
-              className="font2 text-start"
-              animate={leftInView ? "visible" : "hidden"}
-            >
-              Khyati Foods is a leading manufacturer and exporter of high-quality dehydrated onion and garlic products, committed to delivering natural taste and nutritional value in every form. Based in India, we specialize in processing fresh produce into various dehydrated forms such as flakes, granules, slices, minced, and powders, ensuring convenience and extended shelf life without compromising on quality.
-            </motion.p>
+
           </motion.div>
 
           <motion.div
@@ -97,23 +99,25 @@ const About = () => {
             animate={rightInView ? "visible" : "hidden"}
           >
             <div className="content ps-0 ps-lg-5">
-              <motion.p className="font2" variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} >
+                          <motion.p
+              variants={fadeUpVariant}
+              initial="hidden"
+              className="font2 text-start mt-3"
+              animate={leftInView ? "visible" : "hidden"}
+            >
+              Khyati Foods is a leading manufacturer and exporter of high-quality dehydrated onion and garlic products, committed to delivering natural taste and nutritional value in every form. Based in India, we specialize in processing fresh produce into various dehydrated forms such as flakes, granules, slices, minced, and powders, ensuring convenience and extended shelf life without compromising on quality.
+            </motion.p>
+            <br />
+              <motion.p className="font2 text-start" variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} >
                 With advanced dehydration technology and strict quality control processes, we produce ingredients that meet international food safety standards, making us a trusted partner in the food processing, hospitality, retail, and spice industries.
               </motion.p>
-              <motion.h3 variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="fonts text-start">
-                🌱 What We Do:
-              </motion.h3>
-              <motion.ul variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="text-start">
-                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Onion Products</b><br /><span className="font2">Flakes, Chopped, Minced, Granules, Powder</span></li>
-                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Dehydrated Garlic Products</b><br /><span className="font2">Flakes, Minced, Granules, Powder</span></li>
-                <li><i className="bi bi-check-circle-fill fonts"></i> <b>Custom Drying & Processing Solutions</b><br /><span className="font2">Tailored dehydration based on customer specifications</span></li>
-              </motion.ul>
-              <motion.p variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="font2">
+              
+              <motion.p variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="font2 text-start">
                 At Khyati Foods, we blend technology with tradition — ensuring every product retains its authentic flavor, aroma, and nutritional value.
               </motion.p>
               <motion.img
                 src="/imgs/aboutimg2.png"
-                className="img-fluid rounded-4 mb-4"
+                className="img-fluid rounded-4 mb-4 mt-5"
                 alt="Garlic Kibbled"
                 variants={fadeUpVariant}
                 initial="hidden"

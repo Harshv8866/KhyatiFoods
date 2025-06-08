@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/Logo.png';
+import logo from '../assets/Logo2.png';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
@@ -24,8 +24,8 @@ const NavigationBar = () => {
           <img
             src={logo}
             alt="KhyatiFoods Logo"
-            height="80"
-            className="d-inline-block align-top me-2"
+            height="90"
+            className="d-inline-block align-top m-0 p-0"
           />
         </Navbar.Brand>
 
