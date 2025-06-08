@@ -15,15 +15,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section footer-about">
-          <img src={logo} height="" alt="KhyatiFoods Logo" className="footer-logo" />
-          <p>
+          <img src={logo} height="" alt="KhyatiFoods Logo" className="footer-logo " />
+          <p className="text-center"> 
             KhyatiFoods offers premium dehydrated garlic and onion products
             crafted for purity, flavor, and shelf stability. Trusted by
             industries and households alike.
           </p>
         </div>
 
-        <div className="footer-section footer-links">
+        <div className="footer-section footer-links text-center">
           <h5>Quick Links</h5>
           <ul>
             <li><Link to="/">Home</Link></li>
