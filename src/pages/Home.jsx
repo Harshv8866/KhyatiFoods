@@ -64,6 +64,39 @@ const Home = () => {
     "./imgs/img1.webp",
   ];
 
+    const values = [
+    {
+      icon: "/imgs/leaf.png",
+      title: "Pure Ingredients",
+      desc: "We ensure 100% chemical-free dehydration processes, maintaining natural flavor and nutrition.",
+    },
+    {
+      icon: "/imgs/eco.png",
+      title: "Eco-Conscious",
+      desc: "From farm to factory, we follow sustainable practices to minimize our environmental impact.",
+    },
+    {
+      icon: "/imgs/shield.png",
+      title: "Trusted Quality",
+      desc: "Strict quality checks at every step make us a dependable partner across industries.",
+    },
+    {
+      icon: "/imgs/support.png",
+      title: "End-to-End Support",
+      desc: "We assist you from sample requests to bulk fulfillment — always responsive, always reliable.",
+    },
+    {
+      icon: "/imgs/fresh.png",
+      title: "Always Fresh",
+      desc: "Smart storage and processing ensure year-round freshness in every batch we deliver.",
+    },
+    {
+      icon: "/imgs/packaging.png",
+      title: "Hygienic Packaging",
+      desc: "State-of-the-art packaging technology ensures clean, long-lasting shelf life for every product.",
+    },
+  ];
+
   return (
     <div className={animate ? "fade-up" : ""}>
       {/* Carousel Section */}
@@ -184,21 +217,26 @@ const Home = () => {
       <br />
       <br />
 
-      <section >
-        <div className="container section-title text-start" data-aos="fade-up">
-          <h2>About</h2>
-          <p style={{ color: "#4caf50" }}> About Us</p>
+<section className="why-choose py-5">
+        <div className="container text-center">
+          <h2 className="section-title mb-1 fs-1 font3">Why Choose <span>Khyati Foods</span>?</h2>
+          <p className="section-subtitle mb-5 font2 fs-5">Elevating standards in dehydrated ingredients through integrity, innovation, and nature-first values.</p>
+          <div className="row g-4">
+            {values.map((item, idx) => (
+              <div className="col-md-4" key={idx}>
+                <div className="why-card h-100 p-4">
+                  <img src={item.icon} alt="icon" className="why-icon mb-3" />
+                  <h5 className="fw-bold">{item.title}</h5>
+                  <p className="text-muted">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <About  />
       </section>
 
-      <section>
-        <Products />
-      </section>
       <br />
-      <section>
-        <Process />
-      </section>
+
       <section>
         <Certificate />
       </section>

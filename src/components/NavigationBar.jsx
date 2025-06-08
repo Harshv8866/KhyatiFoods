@@ -12,13 +12,22 @@ const NavigationBar = () => {
   };
 
   return (
+    <>
+      <div className="top-bar bg-dark text-white py-2 px-3">
+        <Container className="d-flex justify-content-between align-items-center flex-wrap">
+          <div className="contact-info d-flex gap-3">
+            <span><i className="bi bi-telephone-fill me-1"></i> +91 9723890961</span>
+            <span><i className="bi bi-envelope-fill me-1"></i> info@KhyatiFoods.in</span>
+          </div>
+        </Container>
+      </div>
     <Navbar
       expand="lg"
       className="custom-navbar shadow-sm"
       sticky="top"
       expanded={expanded}
       onToggle={setExpanded}
-    >
+      >
       <Container>
         <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center" onClick={handleNavClick}>
           <img
@@ -26,7 +35,7 @@ const NavigationBar = () => {
             alt="KhyatiFoods Logo"
             height="90"
             className="d-inline-block align-top m-0 p-0"
-          />
+            />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="main-navbar-nav" />
@@ -43,6 +52,7 @@ const NavigationBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+            </>
   );
 };
 

@@ -48,3 +48,12 @@
 .nav-links .nav-link.active {
   font-weight: 600;
 }
+
+.top-bar {
+  font-size: 0.9rem;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+}
