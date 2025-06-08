@@ -1,5 +1,5 @@
 .footer {
-  background: #7fb35fd0; /* very light green */
+  background: #a6df82d0; /* very light green */
   color: #2e7d32; /* deep green text */
   padding: 3rem 1rem 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,7 +24,7 @@
 
 .footer-logo {
   width: 160px;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   margin-left: 90px;
   
 }
