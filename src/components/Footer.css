@@ -119,4 +119,10 @@
   .footer-socials a {
     margin: 0 1rem;
   }
+  .footer-logo {
+  width: 160px;
+  margin-bottom: 0;
+  margin-left: 0;
+  
+}
 }
