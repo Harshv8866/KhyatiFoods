@@ -39,7 +39,7 @@ const Home = () => {
     {
       title: "Dehydrated Garlic ",
       description: "High-quality spices to add flavor and aroma to your dishes.",
-      img: "/imgs/slide2.png",
+      img: "/imgs/slide5.png",
       button: "Contact Us",
     },
     {
