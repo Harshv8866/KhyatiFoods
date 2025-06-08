@@ -6,9 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import About from "./About";
-import Products from "./Products";
-import Process from "./Process";
+
 import Certificate from "./Certificate";
 import Contact from "./Contact"; // Import your Contact component
 
@@ -33,21 +31,21 @@ const Home = () => {
 
   const slides = [
     {
-      title: "Dehydrated White Onion Flakes",
-      description: "Experience the taste of naturally ripened mangoes from our farms.",
+      title: "Dehydrated Onions ",
+      description: "  Dehydrated Onions White, Red, Pink Onions",
       img: "/imgs/slide1.png",
       button: "Contact Us",
     },
     {
-      title: "Dehydrated  Garlic Chopped",
+      title: "Dehydrated Garlic ",
       description: "High-quality spices to add flavor and aroma to your dishes.",
       img: "/imgs/slide2.png",
       button: "Contact Us",
     },
     {
-      title: "Dehydrated Red Onion Flakes",
-      description: "Healthy, preserved veggies — perfect for year-round use.",
-      img: "/imgs/slide3.png",
+      title: "Dehydrated Spices",
+      description: "Dehydrated Red Chili, Turmeric, Coriander, Black Paper Etc Prowder",
+      img: "/imgs/slide4.png",
       button: "Contact Us",
     },
   ];

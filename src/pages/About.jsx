@@ -79,7 +79,7 @@ const About = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             />
-            <motion.h3 variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="fonts text-start">
+            <motion.h3 variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="fonts text-start mt-2">
                 🌱 What We Do:
               </motion.h3>
               <motion.ul variants={fadeUpVariant} initial="hidden" animate={rightInView ? "visible" : "hidden"} className="text-start">
