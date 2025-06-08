@@ -13,9 +13,9 @@ const NavigationBar = () => {
 
   return (
     <>
-      <div className="top-bar bg-dark text-white py-2 px-3">
-        <Container className="d-flex justify-content-between align-items-center flex-wrap">
-          <div className="contact-info d-flex gap-3">
+      <div className="top-bar bg-dark text-white py-2">
+        <Container className="d-flex justify-content-between align-items-center flex-wrap small">
+          <div className="d-flex align-items-center gap-4">
             <span><i className="bi bi-telephone-fill me-1"></i> +91 9723890961</span>
             <span><i className="bi bi-envelope-fill me-1"></i> info@KhyatiFoods.in</span>
           </div>
