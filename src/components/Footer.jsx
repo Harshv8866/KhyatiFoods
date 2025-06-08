@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section footer-about">
           <img src={logo} height="" alt="KhyatiFoods Logo" className="footer-logo " />
-          <p className="text-center"> 
+          <p className="text-center myimg"> 
             KhyatiFoods offers premium dehydrated garlic and onion products
             crafted for purity, flavor, and shelf stability. Trusted by
             industries and households alike.

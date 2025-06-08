@@ -29,26 +29,30 @@ const Home = () => {
     }
   };
 
-  const slides = [
-    {
-      title: "Dehydrated Onions ",
-      description: "  Dehydrated Onions White, Red, Pink Onions",
-      img: "/imgs/slide1.png",
-      button: "Contact Us",
-    },
-    {
-      title: "Dehydrated Garlic ",
-      description: "High-quality spices to add flavor and aroma to your dishes.",
-      img: "/imgs/slide5.png",
-      button: "Contact Us",
-    },
-    {
-      title: "Dehydrated Spices",
-      description: "Dehydrated Red Chili, Turmeric, Coriander, Black Paper Etc Prowder",
-      img: "/imgs/slide4.png",
-      button: "Contact Us",
-    },
-  ];
+const slides = [
+  {
+    title: "Dehydrated Onions",
+    description: "Dehydrated Onions White, Red, Pink Onions",
+    img: "/imgs/slide1.png",
+    mobileImg: "/imgs/slide1-mobile.png", // ← Add mobile image version
+    button: "Contact Us",
+  },
+  {
+    title: "Dehydrated Garlic",
+    description: "High-quality spices to add flavor and aroma to your dishes.",
+    img: "/imgs/slide5.png",
+    mobileImg: "/imgs/slide5-mobile.png",
+    button: "Contact Us",
+  },
+  {
+    title: "Dehydrated Spices",
+    description: "Dehydrated Red Chili, Turmeric, Coriander, Black Paper Etc Prowder",
+    img: "/imgs/slide4.png",
+    mobileImg: "/imgs/slide4-mobile.png",
+    button: "Contact Us",
+  },
+];
+
 
   const images = [
     "./imgs/img1.webp",
@@ -95,21 +99,30 @@ const Home = () => {
     },
   ];
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+useEffect(() => {
+  const handleResize = () => setIsMobile(window.innerWidth < 768);
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
   return (
     <div className={animate ? "fade-up" : ""}>
       {/* Carousel Section */}
       <Carousel fade>
         {slides.map((slide, index) => (
           <Carousel.Item
-            key={index}
-            style={{
-              backgroundImage: `url(${slide.img})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: "500px",
-              position: "relative",
-            }}
-          >
+  key={index}
+  style={{
+    backgroundImage: `url(${isMobile ? slide.mobileImg : slide.img})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "500px",
+    position: "relative",
+  }}
+>
+
             <div
               style={{
                 position: "absolute",
@@ -141,7 +154,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-xl-6 text-dark">
-              <h2 className="border-bottom fonts text-start " style={{ color: "#4cb04f" }}>
+              <h2 className="border-bottom myfonts text-start " style={{ color: "#4cb04f" }}>
                 WELCOME TO KHYATI FOODS
               </h2>
               <p className=" fonts2 text-start ">

@@ -1,6 +1,6 @@
 /* Entire navbar background and font */
 .custom-navbar {
-  background-color: #a6df82d0;
+  background-color: #4cb04f;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -32,6 +32,11 @@
   width: 0%;
   transition: width 0.3s;
   margin-top: 4px;
+}
+
+.myimg{
+  margin-bottom: -50px;
+  z-index: 100;
 }
 
 /* Apply only on hover for larger screens */

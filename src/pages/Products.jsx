@@ -14,60 +14,40 @@ const fadeUpVariant = {
 const Product = [
   {
     id: 1,
-    name: "Dehydrated Garlic Flakes",
-    image: "/imgs/product1.png",
+    name: "Dehydrated Garlic",
+    image: "/imgs/product13.png",
     desc: "Crisp, white garlic flakes perfect for seasoning and industrial use.",
     pack: "Available in 5kg | 10kg | 20kg packs",
   },
   {
     id: 2,
-    name: "Dehydrated Onion Powder",
-    image: "/imgs/product2.png",
+    name: "Dehydrated White Onion ",
+    image: "/imgs/product10.png",
     desc: "Fine, aromatic powder for flavoring soups, sauces, and snacks.",
     pack: "Available in 1kg | 5kg | 25kg drums",
   },
   {
     id: 3,
-    name: "Dehydrated Garlic Granules",
-    image: "/imgs/product3.png",
+    name: "Dehydrated Red Onion",
+    image: "/imgs/product12.png",
     desc: "Uniform garlic granules ideal for ready-to-eat mixes and spices.",
     pack: "Available in 2kg | 10kg | 25kg bags",
   },
   {
     id: 4,
-    name: "Dehydrated White Onion Minced",
-    image: "/imgs/product4.png",
+    name: "Dehydrated Pink Onion",
+    image: "/imgs/product11.png",
     desc: "Premium minced white onion for high-grade food applications.",
     pack: "Available in 10kg | 20kg packaging",
   },
   {
     id: 5,
-    name: "Dehydrated Red Onion Flakes",
-    image: "/imgs/product5.png",
+    name: "Dehydrated Spices",
+    image: "/imgs/product9.png",
     desc: "Vibrant red onion flakes with bold flavor and rich color.",
     pack: "Available in 10kg | 20kg packaging",
   },
-  {
-    id: 6,
-    name: "Dehydrated Garlic Powder",
-    image: "/imgs/product6.png",
-    desc: "Smooth garlic powder for sauces, dressings, and instant foods.",
-    pack: "Available in 1kg | 5kg | 25kg packaging",
-  },
-  {
-    id: 7,
-    name: "Dehydrated White Onion Granules",
-    image: "/imgs/product7.png",
-    desc: "Ideal for spice blends and flavoring solutions in bulk production.",
-    pack: "Available in 10kg | 20kg packaging",
-  },
-  {
-    id: 8,
-    name: "Dehydrated Onion Chopped",
-    image: "/imgs/product8.png",
-    desc: "Fresh chopped onions dehydrated for consistency and convenience.",
-    pack: "Available in 10kg | 20kg packaging",
-  },
+  
 ];
 
 const Products = () => {

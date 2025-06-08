@@ -29,12 +29,12 @@ const NavigationBar = () => {
       onToggle={setExpanded}
       >
       <Container>
-        <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center" onClick={handleNavClick}>
+        <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center myimg" onClick={handleNavClick}>
           <img
             src={logo}
             alt="KhyatiFoods Logo"
-            height="90"
-            className="d-inline-block align-top m-0 p-0"
+            height="100"
+            className="d-inline-block  myimg align-top m-0 p-0 "
             />
         </Navbar.Brand>
 
