@@ -71,3 +71,92 @@ h2{
   font-weight: 100;
   font-style: normal;
 }
+
+.slider-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.slider-popup {
+  background: white;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.slider-controls button {
+  background-color: #4cb04f;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-controls button:hover {
+  background-color: #3a9d40;
+}
+
+@media (max-width: 768px) {
+  .slider-popup {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .slider-controls {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+}
