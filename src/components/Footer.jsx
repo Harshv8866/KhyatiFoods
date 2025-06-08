@@ -7,7 +7,7 @@ import {
   faTwitter,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../assets/Logo.png"; // your logo path
+import logo from "../assets/Logo2.png"; // your logo path
 import "./Footer.css";
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section footer-about">
-          <img src={logo} alt="KhyatiFoods Logo" className="footer-logo" />
+          <img src={logo} height="" alt="KhyatiFoods Logo" className="footer-logo" />
           <p>
             KhyatiFoods offers premium dehydrated garlic and onion products
             crafted for purity, flavor, and shelf stability. Trusted by
