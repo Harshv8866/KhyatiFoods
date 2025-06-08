@@ -21,12 +21,12 @@ const products = [
     subProducts: [
       {
         name: "Garlic Flakes",
-        image: "/imgs/product1.png",
+        image: "/imgs/garlic-flakes.png",
         desc: "Perfect for sauces, pickles, and curries.",
       },
       {
         name: "Garlic Chopped",
-        image: "/imgs/product2.png",
+        image: "/imgs/galic-chopped.png",
         desc: "Uniform cuts for instant use in cooking.",
       },
       {
