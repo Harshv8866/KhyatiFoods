@@ -31,12 +31,12 @@ const products = [
       },
       {
         name: "Garlic Minced",
-        image: "/imgs/product3.png",
+        image: "/imgs/garlic-minced.png",
         desc: "Ideal for seasoning mixes and ready-to-eat foods.",
       },
       {
         name: "Garlic Powder",
-        image: "/imgs/product4.png",
+        image: "/imgs/garlic-powder.png",
         desc: "Smooth fine garlic powder for fast flavor.",
       },
     ],
@@ -50,12 +50,22 @@ const products = [
     subProducts: [
       {
         name: "White Onion Flakes",
-        image: "/imgs/white_onion_flakes.jpg",
+        image: "/imgs/white-flakes.png",
         desc: "Aromatic and crisp for seasoning and sauces.",
       },
       {
         name: "White Onion Powder",
-        image: "/imgs/white_onion_powder.jpg",
+        image: "/imgs/white-chopped.png",
+        desc: "Finely ground white onion powder.",
+      },
+      {
+        name: "White Onion Powder",
+        image: "/imgs/white-minced.png",
+        desc: "Finely ground white onion powder.",
+      },
+      {
+        name: "White Onion Powder",
+        image: "/imgs/white-powder.png",
         desc: "Finely ground white onion powder.",
       },
     ],
@@ -69,12 +79,22 @@ const products = [
     subProducts: [
       {
         name: "Red Onion Flakes",
-        image: "/imgs/red_onion_flakes.jpg",
+        image: "/imgs/red-flakes.png",
         desc: "Great for visual appeal in cooking.",
       },
       {
         name: "Red Onion Powder",
-        image: "/imgs/red_onion_powder.jpg",
+        image: "/imgs/red-chopped.png",
+        desc: "Bold flavor for spice blends.",
+      },
+      {
+        name: "Red Onion Powder",
+        image: "/imgs/red-minced.png",
+        desc: "Bold flavor for spice blends.",
+      },
+      {
+        name: "Red Onion Powder",
+        image: "/imgs/red-powder.png",
         desc: "Bold flavor for spice blends.",
       },
     ],
@@ -88,7 +108,22 @@ const products = [
     subProducts: [
       {
         name: "Pink Onion Flakes",
-        image: "/imgs/pink_onion_flakes.jpg",
+        image: "/imgs/pink-flakes.png",
+        desc: "Delicate taste and aroma.",
+      },
+      {
+        name: "Pink Onion Flakes",
+        image: "/imgs/pink-chopped.png",
+        desc: "Delicate taste and aroma.",
+      },
+      {
+        name: "Pink Onion Flakes",
+        image: "/imgs/pink-minced.png",
+        desc: "Delicate taste and aroma.",
+      },
+      {
+        name: "Pink Onion Flakes",
+        image: "/imgs/pink-powder.png",
         desc: "Delicate taste and aroma.",
       },
     ],
@@ -102,12 +137,12 @@ const products = [
     subProducts: [
       {
         name: "Red Chili Powder",
-        image: "/imgs/red_chili_powder.jpg",
+        image: "/imgs/red-chilli-powder.png",
         desc: "Bright color and heat.",
       },
       {
         name: "Turmeric Powder",
-        image: "/imgs/turmeric_powder.jpg",
+        image: "/imgs/turmeric-powder.png",
         desc: "Rich in aroma and health benefits.",
       },
     ],
