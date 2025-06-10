@@ -4,8 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faInstagram,
+  faLinkedin,
   faTwitter,
   faWhatsapp,
+  
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/Logo2.png"; // your logo path
 import "./Footer.css";
@@ -78,6 +80,15 @@ const Footer = () => {
             >
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
+            <a
+  href="https://www.linkedin.com/company/khyatifoods"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LinkedIn"
+>
+  <FontAwesomeIcon icon={faLinkedin} />
+</a>
+
           </div>
         </div>
       </div>
