@@ -31,14 +31,14 @@ const slides = [
     title: "Dehydrated Onions",
     description: "Dehydrated Onions White, Red, Pink Onions",
     img: "/imgs/slide1.png",
-    mobileImg: "/imgs/slide1-mobile.png", // ← Add mobile image version
+    mobileImg: "/imgs/slide5-mobile.png", // ← Add mobile image version
     button: "Contact Us",
   },
   {
     title: "Dehydrated Garlic",
     description: "High-quality spices to add flavor and aroma to your dishes.",
     img: "/imgs/slide5.png",
-    mobileImg: "/imgs/slide5-mobile.png",
+    mobileImg: "/imgs/slide1-mobile.png",
     button: "Contact Us",
   },
   {
