@@ -29,8 +29,8 @@
 
 .certificate-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
   margin-top: 40px;
 }
 
@@ -80,4 +80,16 @@
  font-family: "Corben", serif;
   font-weight: 100;
   font-style: normal;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
 }
