@@ -22,22 +22,22 @@ const products = [
       {
         name: "Garlic Flakes",
         image: "/imgs/garlic-flakes.png",
-        desc: "Perfect for sauces, pickles, and curries.",
+        desc: "Garlic Flakes for sauces and curries",
       },
       {
         name: "Garlic Chopped",
         image: "/imgs/galic-chopped.png",
-        desc: "Uniform cuts for instant use in cooking.",
+        desc: " Garlic Chopped for quick cooking.,  ",
       },
       {
         name: "Garlic Minced",
         image: "/imgs/garlic-minced.png",
-        desc: "Ideal for seasoning mixes and ready-to-eat foods.",
+        desc: "Garlic Minced for spice blends and ready meals.",
       },
       {
         name: "Garlic Powder",
         image: "/imgs/garlic-powder.png",
-        desc: "Smooth fine garlic powder for fast flavor.",
+        desc: "Garlic Powder for instant flavor in seasonings.",
       },
     ],
   },
@@ -45,23 +45,23 @@ const products = [
     id: 2,
     name: "Dehydrated White Onion",
     image: "/imgs/product10.png",
-    desc: "Fine, aromatic white onion powder.",
-    pack: "Available in 1kg | 5kg | 25kg drums",
+    desc: "White Onion Flakes for seasoning and sauces. ",
     subProducts: [
       {
         name: "White Onion Flakes",
         image: "/imgs/white-flakes.png",
-        desc: "Aromatic and crisp for seasoning and sauces.",
+        desc: "White Onion Chopped and Minced offer finely cut and ground textures. "
+
       },
       {
-        name: "White Onion Powder",
+        name: "White Onion Chopped",
         image: "/imgs/white-chopped.png",
-        desc: "Finely ground white onion powder.",
+        desc: "ideal for enhancing flavor in soups, sauces, and ready-to-eat dishes.",
       },
       {
-        name: "White Onion Powder",
+        name: "White Onion minced",
         image: "/imgs/white-minced.png",
-        desc: "Finely ground white onion powder.",
+        desc: "ground White Onion Powder ideal for soups.",
       },
       {
         name: "White Onion Powder",
@@ -74,8 +74,7 @@ const products = [
     id: 3,
     name: "Dehydrated Red Onion",
     image: "/imgs/product12.png",
-    desc: "Uniform granules ideal for ready-to-eat mixes and spices.",
-    pack: "Available in 2kg | 10kg | 25kg bags",
+    desc:"Crisp and flavorful flakes ideal for adding texture and color to cooked dishes.",
     subProducts: [
       {
         name: "Red Onion Flakes",
@@ -83,19 +82,19 @@ const products = [
         desc: "Great for visual appeal in cooking.",
       },
       {
-        name: "Red Onion Powder",
+        name: "Red Onion Chopped",
         image: "/imgs/red-chopped.png",
-        desc: "Bold flavor for spice blends.",
+        desc: "Coarsely cut with a bold taste, perfect for savory spice mixes and seasonings..",
       },
       {
-        name: "Red Onion Powder",
+        name: "Red Onion Minced",
         image: "/imgs/red-minced.png",
-        desc: "Bold flavor for spice blends.",
+        desc: "Finely diced for instant use in ready-to-eat meals and dry blends..",
       },
       {
         name: "Red Onion Powder",
         image: "/imgs/red-powder.png",
-        desc: "Bold flavor for spice blends.",
+        desc: " Smooth, pungent powder that enhances sauces, soups, and seasoning bases.",
       },
     ],
   },
@@ -104,27 +103,26 @@ const products = [
     name: "Dehydrated Pink Onion",
     image: "/imgs/product11.png",
     desc: "Premium minced pink onion for food applications.",
-    pack: "Available in 10kg | 20kg packaging",
     subProducts: [
       {
         name: "Pink Onion Flakes",
         image: "/imgs/pink-flakes.png",
-        desc: "Delicate taste and aroma.",
+        desc: "Light, aromatic flakes with a mild onion flavor for premium food applications..",
       },
       {
-        name: "Pink Onion Flakes",
+        name: "Pink Onion CHopped",
         image: "/imgs/pink-chopped.png",
-        desc: "Delicate taste and aroma.",
+        desc: "Soft pink chunks, great for visible inclusion in gourmet mixes.",
       },
       {
-        name: "Pink Onion Flakes",
+        name: "Pink Onion Minced",
         image: "/imgs/pink-minced.png",
-        desc: "Delicate taste and aroma.",
+        desc: "Delicate minced bits, perfect for subtle flavor and texture in food products.",
       },
       {
-        name: "Pink Onion Flakes",
+        name: "Pink Onion Powder",
         image: "/imgs/pink-powder.png",
-        desc: "Delicate taste and aroma.",
+        desc: "Fine powder with gentle aroma, suited for spice blends and soup bases.",
       },
     ],
   },
@@ -133,17 +131,26 @@ const products = [
     name: "Dehydrated Spices",
     image: "/imgs/product9.png",
     desc: "Vibrant range of dehydrated spices.",
-    pack: "Available in 10kg | 20kg packaging",
     subProducts: [
       {
         name: "Red Chili Powder",
         image: "/imgs/red-chilli-powder.png",
-        desc: "Bright color and heat.",
+        desc: "Fiery red powder that adds vibrant color and intense heat to any dish.",
       },
       {
         name: "Turmeric Powder",
         image: "/imgs/turmeric-powder.png",
-        desc: "Rich in aroma and health benefits.",
+        desc: "Earthy golden spice known for its bold flavor and medicinal properties.",
+      },
+      {
+        name: "Black Paper powder.png",
+        image: "/imgs/blackpaper-powder.png",
+        desc: "Strong, sharp flavor perfect for seasoning meats, soups, and marinades.",
+      },
+      {
+        name: "Coriander Powder",
+        image: "/imgs/coriander-powder.png",
+        desc: "Warm, citrusy aroma with nutty undertones, ideal for curries and spice mixes.",
       },
     ],
   }, // Add other product entries similarly...
@@ -217,8 +224,8 @@ const Products = () => {
                 alt={selectedProduct.subProducts[currentSlide].name}
                 className="slider-image"
               />
-              <h5>{selectedProduct.subProducts[currentSlide].name}</h5>
-              <p>{selectedProduct.subProducts[currentSlide].desc}</p>
+              <h5 className="slider-font2">{selectedProduct.subProducts[currentSlide].name}</h5>
+              <p className="slider-font">{selectedProduct.subProducts[currentSlide].desc}</p>
               <p className="text-success fw-medium">
                 {selectedProduct.subProducts[currentSlide].pack}
               </p>

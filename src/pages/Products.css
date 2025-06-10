@@ -145,6 +145,17 @@ h2{
   transition: background-color 0.3s ease;
 }
 
+.slider-font{
+    font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.slider-font2{
+    font-family: "Forum", serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
 .slider-controls button:hover {
   background-color: #3a9d40;
 }

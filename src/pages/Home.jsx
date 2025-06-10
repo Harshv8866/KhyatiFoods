@@ -2,10 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
+
 
 import Certificate from "./Certificate";
 import Contact from "./Contact"; // Import your Contact component
@@ -54,17 +51,6 @@ const slides = [
 ];
 
 
-  const images = [
-    "./imgs/img1.webp",
-    "./imgs/img2.webp",
-    "./imgs/img3.webp",
-    "./imgs/img4.jpg",
-    "./imgs/img5.jpg",
-    "./imgs/img6.jpg",
-    "./imgs/img7.jpg",
-    "./imgs/img1.webp",
-    "./imgs/img1.webp",
-  ];
 
     const values = [
     {
@@ -181,44 +167,21 @@ useEffect(() => {
 
             <div className="col-12 col-xl-6 mt-xl-5 mt-1">
               <div className="ms-xl-5 ms-1">
-                <Swiper
-                  direction={"vertical"}
-                  slidesPerView={1}
-                  spaceBetween={80}
-                  mousewheel={true}
-                  pagination={{ clickable: true }}
-                  modules={[Mousewheel, Pagination]}
-                  className="mySwiper"
-                  style={{
-                    height: "400px",
-                    borderRadius: "15px",
-                    maxWidth: "100%",
-                  }}
-                >
-                  {images.map((img, i) => (
-                    <SwiperSlide
-                      key={i}
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <img
-                        src={img}
-                        alt={`Slide ${i + 1}`}
-                        style={{
-                          width: "100%",
-                          maxWidth: "500px", // limits on large screens
-                          height: "auto",
-                          aspectRatio: "5 / 4", // keeps proportions
-                          objectFit: "cover",
-                          borderRadius: "10px",
-                        }}
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                <img
+  src="/imgs/compny.jpg" // ✅ Replace with your desired image
+  alt="Welcome to Khyati Foods"
+  className="zoom-effect ms-xl-4 ms-0"
+  style={{
+    width: "100%",
+    maxWidth: "600px",
+    height: "auto",
+    borderRadius: "10px",
+    objectFit: "cover",
+    boxShadow:"0px 1px 1px 1px 10px black"
+    // aspectRatio: "5 / 4",
+  }}
+/>
+
               </div>
             </div>
           </div>
