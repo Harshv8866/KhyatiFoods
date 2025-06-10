@@ -143,7 +143,7 @@ const products = [
         desc: "Earthy golden spice known for its bold flavor and medicinal properties.",
       },
       {
-        name: "Black Paper powder.png",
+        name: "Black Paper powder",
         image: "/imgs/blackpaper-powder.png",
         desc: "Strong, sharp flavor perfect for seasoning meats, soups, and marinades.",
       },

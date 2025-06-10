@@ -17,7 +17,7 @@ const NavigationBar = () => {
         <Container className="d-flex justify-content-between align-items-center flex-wrap small">
           <div className="d-flex align-items-center gap-4">
             <span><i className="bi bi-telephone-fill me-1"></i> +91 9723890961</span>
-            <span><i className="bi bi-envelope-fill me-1"></i> info@KhyatiFoods.in</span>
+            <span><i className="bi bi-envelope-fill me-1"></i><a href="mailto:info@khyatifoods.in" style={{ color: "inherit", textDecoration: "none" }}>info@KhyatiFoods.in</a> </span>
           </div>
         </Container>
       </div>

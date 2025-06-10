@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="contact-info-box">
             <h3>Contact Information</h3>
             <p>
-              <strong>Address:</strong> Survey No, 186 , Dwarkadhish Rd, Bhanvad, Mahuva, Gujarat 364290
+              <strong>Address:</strong> Survey no 186, paiki 2/1, paiki 1, Dwarkadish Road, Mahuva, Dist Bhavnagar, Gujarat(India)-364290
             </p>
             <p>
               <strong>Phone:</strong> +91 9723890961

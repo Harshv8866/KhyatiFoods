@@ -37,9 +37,13 @@ const Footer = () => {
 
         <div className="footer-section footer-contact">
           <h5>Contact Us</h5>
-          <p>Survey No, 186 , Dwarkadhish Rd, Bhanvad, Mahuva, Gujarat 364290</p>
+          <p>Survey no 186, paiki 2/1, paiki 1, Dwarkadish Road, Mahuva, Dist Bhavnagar, Gujarat(India)-364290</p>
           <p>Phone: +91 9723890961</p>
-          <p>Email: info@khyatifoods.com</p>
+<p>
+  Email: <a href="mailto:info@khyatifoods.in" style={{ color: "inherit", textDecoration: "none" }}>
+    info@khyatifoods.in
+  </a>
+</p>
 
           <div className="footer-socials">
             <a
