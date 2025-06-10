@@ -7,9 +7,10 @@ const certificates = [
   { name: "FSSAI", img: "/imgs/fssai.jpg" },
   { name: "APEDA", img: "/imgs/apeda.png" },
   { name: "Spice Board", img: "/imgs/spice-board.png" },
-  { name: "SGS", img: "/imgs/SGS.png" },
+  { name: "Halal", img: "/imgs/halal.png" },
   { name: "FSSC", img: "/imgs/FSSC.webp" },
   { name: "KLBD", img: "/imgs/KLBD.png" },
+  { name: "FDA", img: "/imgs/fda.png" },
 ];
 
 const Certificate = () => {
